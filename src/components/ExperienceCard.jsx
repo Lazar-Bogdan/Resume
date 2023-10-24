@@ -1,24 +1,23 @@
 import styled from 'styled-components';
 
-const ExperienceCard = () => {
+const ExperienceCard = (props) => {
   return (
     <Container>
       <SpacedColumn>
-        <Title>Developer</Title>
-        <Period>Yesterday - Today</Period>
+        <Title>{props.title}</Title>
+        <Period>{props.start} - {props.end}</Period>
       </SpacedColumn>
       <SpacedColumn>
         <Company>
-          <CompanyLogo src="https://www.adaptivewfs.com/wp-content/uploads/2020/07/logo-placeholder-image.png" />
-          <CompanyName>Comp Inc</CompanyName>
+          <CompanyLogo src={props.companyLogo} />
+          <CompanyName>{props.companyName}</CompanyName>
         </Company>
-        <Location>Romanian</Location>
+        <Location>{props.location}</Location>
       </SpacedColumn>
       <BulletPoints>
-        <Point>Programming</Point>
-        <Point>Programming</Point>
-        <Point>Programming</Point>
-        <Point>Programming</Point>
+        {props.bulletPoints?.map(point => (
+          <Point>{point}</Point>
+        ))}
       </BulletPoints>
     </Container>
   )
