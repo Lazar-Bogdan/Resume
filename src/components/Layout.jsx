@@ -4,7 +4,12 @@ const Layout = (props) => {
   return (
     <Background>
       <Page>
-        {props.children}
+        <Column>
+          {props.left}
+        </Column>
+        <Column>
+          {props.right}
+        </Column>
       </Page>
     </Background>
   )
@@ -30,4 +35,10 @@ const Page = styled.div`
   border: 5px solid #000;
   background: #FCC526;
   box-shadow: 24px 20px 0px 0px rgba(52, 52, 51, 0.35);
+  display: flex;
+  flex-direction: row;
+`;
+
+const Column = styled.div`
+  flex: 1;
 `;
