@@ -3,8 +3,8 @@ import ExperienceCard from './ExperienceCard'
 
 const WorkExperience = () => {
   return(
-    <div>
-      <Title>Work Experience</Title>
+    <Container>
+      <Title>Work experience</Title>
       <ExperienceList>
         <ExperienceCard
           title="Developer"
@@ -63,11 +63,17 @@ const WorkExperience = () => {
           ]} 
         />
       </ExperienceList>
-    </div>
+    </Container>
   )
 }
 
 export default WorkExperience;
+
+const Container = styled.div`
+  width: 370px;
+  height: 905px;
+  flex-shrink: 0;
+`;
 
 const Title = styled.div`
   color: #0B0B0B;
