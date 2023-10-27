@@ -23,6 +23,7 @@ const Container = styled.div`
   height: 213px;
   flex-shrink: 0;
   border: 4px solid #000;
+  margin-left: -50px;
   background: #FFF;
   box-shadow: 16px 16px 0px 0px #928CF8;
   margin-top: -35px;

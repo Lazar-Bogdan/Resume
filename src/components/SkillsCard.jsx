@@ -17,7 +17,7 @@ export default SkillsCard;
 
 const Container = styled.div`
   display: flex;
-  width: 230px;
+  width: 240px;
   padding: 25px 73px 25px 18px;
   flex-direction: column;
   justify-content: center;

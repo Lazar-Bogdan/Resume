@@ -20,7 +20,7 @@ const Title = styled.div`
   line-height: 100%; /* 18px */
   margin-left:43px;
   margin-bottom:13px;
-  margin-top:40px;
+  margin-top:100px;
 `;
 
 const Likes = styled.div`

@@ -44,5 +44,5 @@ const Title = styled.div`
 const EducationList = styled.div`
   display:flex;
   flex-direction:column;
-  gap: 40px;
+  gap: 30px;
 `;

@@ -1,4 +1,5 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
+
 
 const ExperienceCard = (props) => {
   return (
@@ -9,7 +10,7 @@ const ExperienceCard = (props) => {
       </SpacedColumn>
       <SpacedColumn>
         <Company>
-          <CompanyLogo src={props.companyLogo} />
+          <CompanyLogo src={props.companyLogo}></CompanyLogo>
           <CompanyName>{props.companyName}</CompanyName>
         </Company>
         <Location>{props.location}</Location>
@@ -25,9 +26,11 @@ const ExperienceCard = (props) => {
 
 export default ExperienceCard;
 
+
 const Container = styled.div`
   display: flex;
   width: 370px;
+  height: 129px;
   padding: 31px 24.5px 31px 26px;
   margin-left: -26px;
   flex-direction: column;
@@ -39,10 +42,10 @@ const Container = styled.div`
 `;
 
 const SpacedColumn = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ align-items: center;
 `;
 
 const Title = styled.span`
@@ -57,24 +60,19 @@ const Title = styled.span`
 const Period = styled.span`
   color: #595959;
   text-align: right;
-  font-family: Source Sans Pro;
+  font-family: 'Source Sans 3';
   font-size: 13px;
   font-style: normal;
   font-weight: 400;
   line-height: 140%; /* 18.2px */
 `;
 
-const CompanyLogo = styled.img`
-  width: 32px;
-  height: 31.979px;
-  flex-shrink: 0;
-`;
-
 const Company = styled.div`
-  display: flex;
-  flex-direction: row;
-  gap: 8px;
-  align-items: center;
+ display: flex;
+ flex-direction: row;
+ gap: 8px;
+ align-items: center;
+
 `;
 
 const CompanyName = styled.span`
@@ -84,6 +82,12 @@ const CompanyName = styled.span`
   font-style: normal;
   font-weight: 800;
   line-height: normal;
+`;
+
+const CompanyLogo = styled.img`
+  width: 32px;
+  height: 31.979px;
+  flex-shrink: 0;
 `;
 
 const Location = styled.span`
@@ -99,7 +103,7 @@ const BulletPoints = styled.ul`
   columns: 2;
 `;
 
-const Point = styled.li`
+const Point = styled.li`  
   color: #595959;
   font-family: 'Source Sans 3';
   font-size: 13px;
